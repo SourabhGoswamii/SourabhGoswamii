@@ -2,7 +2,7 @@
 
 <!-- Banner -->
 <p align="center">
-  <img src="https://github.com/SourabhGoswamii/SourabhGoswamii/assets/123456789/A_digital_illustration_in_a_cyberpunk_style_featur.png" alt="Cyberpunk Banner" width="100%">
+  <img src="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/main/cyberpunk_banner.png" alt="Cyberpunk Banner" width="100%" height="auto">
 </p>
 
 <h1 align="center">
