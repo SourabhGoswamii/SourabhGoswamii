@@ -5,7 +5,7 @@
 </h1>
 
 
-<div class="tenor-gif-embed" data-postid="19620716" data-share-method="host" data-aspect-ratio="1.23552" data-width="100%"><a href="https://tenor.com/view/menhera-chan-sleep-cute-anime-gif-19620716">Menhera Chan Sticker</a>from <a href="https://tenor.com/search/menhera-stickers">Menhera Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
 ---
 
 ### ⚡ About Me  
@@ -82,7 +82,7 @@ I believe in learning by doing — every project is a step closer to mastery.
 <p align="center">
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY5NjY3NmE4NjY1YzQyNjBkZmYzNTg1NzQ0MTI1YTAzOTExOTQ5ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wvQIqJyNBOCjK/giphy.gif" width="450" />
 </p>
-
+_
 ---
 
 <h3 align="center">⚔️ Let's build the future together. ⚙️</h3>
