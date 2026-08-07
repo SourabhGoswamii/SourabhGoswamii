@@ -173,34 +173,7 @@ Exploring → RL Environments · AI Infrastructure
 
 ---
 
-## RECENT WORK & TIMELINE
 
-```
-──────────────────────────────────────────────────────────────────────────────
-
-  2024  ░  Foundations & Exploration
-           Developer / Student
-           └─ C, C++, JavaScript, web development and programming fundamentals.
-           └─ Started exploring full-stack application development.
-
-  2025  ░  Full-Stack & Product Engineering
-           Full-Stack Developer
-           └─ Built MERN-based e-commerce applications.
-           └─ Developed CodeHub, a developer collaboration and learning platform.
-           └─ Explored AI integrations, Web3, smart contracts and cloud deployment.
-
-  2026  ░  AI Systems & Advanced Engineering
-           AI / Full-Stack Developer
-           └─ DIANA: Agentic CLI system with autonomous tools and execution modes.
-           └─ MedCare: AI and technology-driven healthcare management platform.
-           └─ Built and experimented with deep-learning healthcare pipelines.
-           └─ Exploring reinforcement learning environments and AI infrastructure.
-           └─ Building BuilderX and next-generation AI-powered developer tools.
-
-──────────────────────────────────────────────────────────────────────────────
-```
-
----
 
 ## SHIPPED & ACTIVE PROJECTS
 
