@@ -1,410 +1,310 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Serif+Display&amp;display=swap');
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&display=swap');
+      * { box-sizing: border-box; margin: 0; padding: 0; }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+      .root {
+        width: 900px;
+        height: 220px;
+        background: #0a0a0a;
+        border: 3px solid #58a6ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 48px;
+        position: relative;
+        overflow: hidden;
+        font-family: 'DM Mono', 'Courier New', monospace;
+      }
 
-body {
-  background: #0a0a0a;
-}
+      /* Brutalist corner marks */
+      .corner {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-color: #58a6ff;
+        border-style: solid;
+      }
+      .corner-tl { top: 10px; left: 10px; border-width: 3px 0 0 3px; }
+      .corner-tr { top: 10px; right: 10px; border-width: 3px 3px 0 0; }
+      .corner-bl { bottom: 10px; left: 10px; border-width: 0 0 3px 3px; }
+      .corner-br { bottom: 10px; right: 10px; border-width: 0 3px 3px 0; }
 
-.root {
-  width: 900px;
-  height: 220px;
-  background: #0a0a0a;
-  border: 3px solid #58a6ff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 48px;
-  position: relative;
-  overflow: hidden;
-  font-family: 'DM Mono', 'Courier New', monospace;
-}
+      /* Scan-line texture */
+      .scanlines {
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(88, 166, 255, 0.015) 3px,
+          rgba(88, 166, 255, 0.015) 4px
+        );
+        pointer-events: none;
+      }
 
-/* Brutalist corner marks */
-.corner {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border-color: #58a6ff;
-  border-style: solid;
-}
+      /* Vertical rule */
+      .rule {
+        position: absolute;
+        left: 48px;
+        top: 28px;
+        bottom: 28px;
+        width: 2px;
+        background: #58a6ff;
+        transform-origin: top;
+        animation: ruleGrow 0.6s cubic-bezier(0.77,0,0.175,1) 0.1s both;
+      }
 
-.corner-tl {
-  top: 10px;
-  left: 10px;
-  border-width: 3px 0 0 3px;
-}
+      @keyframes ruleGrow {
+        from { transform: scaleY(0); }
+        to   { transform: scaleY(1); }
+      }
 
-.corner-tr {
-  top: 10px;
-  right: 10px;
-  border-width: 3px 3px 0 0;
-}
+      .content {
+        padding-left: 22px;
+      }
 
-.corner-bl {
-  bottom: 10px;
-  left: 10px;
-  border-width: 0 0 3px 3px;
-}
+      /* Label line */
+      .label {
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        color: #88a8ff;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 0.5s both;
+      }
 
-.corner-br {
-  bottom: 10px;
-  right: 10px;
-  border-width: 0 3px 3px 0;
-}
+      /* Main name */
+      .name {
+        font-family: 'DM Serif Display', 'Georgia', serif;
+        font-size: 52px;
+        color: #f0f6fc;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        margin: 6px 0 8px;
+        opacity: 0;
+        animation: fadeUp 0.6s ease 0.65s both;
+      }
 
-/* Scan-line texture */
-.scanlines {
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 3px,
-    rgba(88, 166, 255, 0.015) 3px,
-    rgba(88, 166, 255, 0.015) 4px
-  );
-  pointer-events: none;
-}
+      /* Rotating role */
+      .role-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 0.85s both;
+      }
 
-/* Vertical rule */
-.rule {
-  position: absolute;
-  left: 48px;
-  top: 28px;
-  bottom: 28px;
-  width: 2px;
-  background: #58a6ff;
-  transform-origin: top;
-  animation: ruleGrow 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.1s both;
-}
+      .role-prefix {
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: #58a6ff;
+        text-transform: uppercase;
+      }
 
-@keyframes ruleGrow {
-  from {
-    transform: scaleY(0);
-  }
+      .role {
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        color: #f0f6fc;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-bottom: 1px solid #58a6ff;
+        padding-bottom: 1px;
+        animation: cycleText 9s steps(1) 1.2s infinite;
+      }
 
-  to {
-    transform: scaleY(1);
-  }
-}
+      @keyframes cycleText {
+        0%  { content: none; }
+      }
 
-.content {
-  padding-left: 22px;
-}
+      /* Clip + translate trick for role cycling */
+      .roles-container {
+        height: 16px;
+        overflow: hidden;
+      }
 
-/* Label line */
-.label {
-  font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.3em;
-  color: #88a8ff;
-  text-transform: uppercase;
-  opacity: 0;
-  animation: fadeUp 0.5s ease 0.5s both;
-}
+      .roles-inner {
+        animation: slideRoles 9s steps(1) 1.2s infinite;
+      }
 
-/* Main name */
-.name {
-  font-family: 'DM Serif Display', 'Georgia', serif;
-  font-size: 44px;
-  color: #f0f6fc;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin: 6px 0 8px;
-  opacity: 0;
-  animation: fadeUp 0.6s ease 0.65s both;
-}
+      .role-item {
+        height: 16px;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        color: #f0f6fc;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 16px;
+        border-bottom: 1px solid #58a6ff;
+        display: inline-block;
+      }
 
-/* Rotating role */
-.role-wrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  opacity: 0;
-  animation: fadeUp 0.5s ease 0.85s both;
-}
+      @keyframes slideRoles {
+        0%   { transform: translateY(0); }
+        33%  { transform: translateY(-16px); }
+        66%  { transform: translateY(-32px); }
+        100% { transform: translateY(0); }
+      }
 
-.role-prefix {
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: #58a6ff;
-  text-transform: uppercase;
-}
+      /* Tags row */
+      .tags {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 1.05s both;
+      }
 
-.role {
-  font-size: 12px;
-  letter-spacing: 0.15em;
-  color: #f0f6fc;
-  text-transform: uppercase;
-  font-weight: 500;
-  border-bottom: 1px solid #58a6ff;
-  padding-bottom: 1px;
-  animation: cycleText 9s steps(1) 1.2s infinite;
-}
+      .tag {
+        font-size: 9px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #0a0a0a;
+        background: #58a6ff;
+        padding: 3px 8px;
+        font-weight: 500;
+      }
 
-@keyframes cycleText {
-  0% {
-    content: none;
-  }
-}
+      /* Right-side stats block */
+      .stats {
+        position: absolute;
+        right: 48px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: right;
+        opacity: 0;
+        animation: fadeUp 0.6s ease 1.1s both;
+      }
 
-/* Clip + translate trick for role cycling */
-.roles-container {
-  height: 16px;
-  overflow: hidden;
-}
+      .stat-num {
+        font-family: 'DM Serif Display', 'Georgia', serif;
+        font-size: 42px;
+        color: #58a6ff;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
 
-.roles-inner {
-  animation: slideRoles 9s steps(1) 1.2s infinite;
-}
+      .stat-label {
+        font-size: 9px;
+        letter-spacing: 0.25em;
+        color: #8b949e;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
 
-.role-item {
-  height: 16px;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  color: #f0f6fc;
-  text-transform: uppercase;
-  font-weight: 500;
-  line-height: 16px;
-  border-bottom: 1px solid #58a6ff;
-  display: block;
-  width: fit-content;
-}
+      .stat-divider {
+        width: 100%;
+        height: 1px;
+        background: #30363d;
+        margin: 10px 0;
+      }
 
-@keyframes slideRoles {
-  0% {
-    transform: translateY(0);
-  }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
 
-  33% {
-    transform: translateY(-16px);
-  }
+      /* Blinking cursor */
+      .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 12px;
+        background: #58a6ff;
+        margin-left: 2px;
+        vertical-align: middle;
+        animation: blink 1s step-end infinite;
+      }
 
-  66% {
-    transform: translateY(-32px);
-  }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
 
-  100% {
-    transform: translateY(0);
-  }
-}
+      /* Top-right index number */
+      .index {
+        position: absolute;
+        top: 18px;
+        right: 48px;
+        font-size: 9px;
+        letter-spacing: 0.3em;
+        color: #8b949e;
+        text-transform: uppercase;
+      }
 
-/* Tags row */
-.tags {
-  display: flex;
-  gap: 8px;
-  margin-top: 14px;
-  opacity: 0;
-  animation: fadeUp 0.5s ease 1.05s both;
-}
+      /* Bottom baseline */
+      .baseline {
+        position: absolute;
+        bottom: 18px;
+        left: 48px;
+        right: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        animation: fadeUp 0.5s ease 1.3s both;
+      }
 
-.tag {
-  font-size: 9px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #0a0a0a;
-  background: #58a6ff;
-  padding: 3px 8px;
-  font-weight: 500;
-}
+      .baseline-text {
+        font-size: 8px;
+        letter-spacing: 0.3em;
+        color: #8b949e;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
 
-/* Right-side stats block */
-.stats {
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: right;
-  opacity: 0;
-  animation: fadeUp 0.6s ease 1.1s both;
-}
+  <foreignObject width="900" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="root">
+      <div class="scanlines"></div>
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
 
-.stat-num {
-  font-family: 'DM Serif Display', 'Georgia', serif;
-  font-size: 42px;
-  color: #58a6ff;
-  line-height: 1;
-  letter-spacing: -0.02em;
-}
+      <div class="rule"></div>
 
-.stat-label {
-  font-size: 9px;
-  letter-spacing: 0.25em;
-  color: #8b949e;
-  text-transform: uppercase;
-  margin-top: 2px;
-}
+      <div class="index">PROFILE / Sourabh</div>
 
-.stat-divider {
-  width: 100%;
-  height: 1px;
-  background: #30363d;
-  margin: 10px 0;
-}
+      <div class="content">
+        <div class="label">Backend, DevOps &amp; Low-Level Enthusiast</div>
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+        <div class="name">Sourabh Goswami</div>
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Blinking cursor */
-.cursor {
-  display: inline-block;
-  width: 2px;
-  height: 12px;
-  background: #58a6ff;
-  margin-left: 2px;
-  vertical-align: middle;
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Top-right index number */
-.index {
-  position: absolute;
-  top: 18px;
-  right: 48px;
-  font-size: 9px;
-  letter-spacing: 0.3em;
-  color: #8b949e;
-  text-transform: uppercase;
-}
-
-/* Bottom baseline */
-.baseline {
-  position: absolute;
-  bottom: 18px;
-  left: 48px;
-  right: 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 0;
-  animation: fadeUp 0.5s ease 1.3s both;
-}
-
-.baseline-text {
-  font-size: 8px;
-  letter-spacing: 0.3em;
-  color: #8b949e;
-  text-transform: uppercase;
-}
-</style>
-</head>
-
-<body>
-
-<div class="root">
-
-  <div class="corner corner-tl"></div>
-  <div class="corner corner-tr"></div>
-  <div class="corner corner-bl"></div>
-  <div class="corner corner-br"></div>
-
-  <div class="scanlines"></div>
-
-  <div class="rule"></div>
-
-  <div class="index">PROFILE / SOURABH</div>
-
-  <div class="content">
-
-    <div class="label">
-      Full-Stack, AI &amp; Systems Developer
-    </div>
-
-    <div class="name">
-      Sourabh Goswami
-    </div>
-
-    <div class="role-wrap">
-
-      <span class="role-prefix">→</span>
-
-      <div class="roles-container">
-        <div class="roles-inner">
-
-          <div class="role-item">
-            Full-Stack · Next.js · MERN<span class="cursor"></span>
+        <div class="role-wrap">
+          <span class="role-prefix">→</span>
+          <div class="roles-container">
+            <div class="roles-inner">
+              <div class="role-item">Backend · Cloud · DevOps Systems<span class="cursor"></span></div>
+              <div class="role-item">Flutter · Dart · Mobile Apps<span class="cursor"></span></div>
+              <div class="role-item">WebSockets · Next.js · Real-Time<span class="cursor"></span></div>
+            </div>
           </div>
+        </div>
 
-          <div class="role-item">
-            AI · Agents · Deep Learning<span class="cursor"></span>
-          </div>
-
-          <div class="role-item">
-            C++ · DSA · System Exploration<span class="cursor"></span>
-          </div>
-
+        <div class="tags">
+          <span class="tag">Self-Taught</span>
+          <span class="tag">Low-Level</span>
+          <span class="tag">20 Y/O</span>
+          <span class="tag">Real-Time</span>
         </div>
       </div>
 
+      <div class="stats">
+        <div class="stat-num">20</div>
+        <div class="stat-label">Years of Age</div>
+        <div class="stat-divider"></div>
+        <div class="stat-label">Repos &amp; Projects</div>
+      </div>
+
+      <div class="baseline">
+        <span class="baseline-text">sourabhgoswamii.vercel.app</span>
+      </div>
     </div>
-
-    <div class="tags">
-      <span class="tag">Full-Stack</span>
-      <span class="tag">AI Systems</span>
-      <span class="tag">Open Source</span>
-      <span class="tag">Builder</span>
-    </div>
-
-  </div>
-
-  <div class="stats">
-
-    <div class="stat-num">20</div>
-    <div class="stat-label">Years of Age</div>
-
-    <div class="stat-divider"></div>
-
-    <div class="stat-num">23+</div>
-    <div class="stat-label">Public Repositories</div>
-
-  </div>
-
-  <div class="baseline">
-
-    <span class="baseline-text">
-      India · UTC+5:30
-    </span>
-
-    <span class="baseline-text">
-      sourabhgoswamii.vercel.app
-    </span>
-
-  </div>
-
-</div>
-
-</body>
-</html>
+  </foreignObject>
+</svg>
