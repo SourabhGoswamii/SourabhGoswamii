@@ -270,6 +270,21 @@ research:
 
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SourabhGoswamii&bg_color=0a0a0a&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true" width="95%" alt="Contribution graph" />
 
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/output/pacman-contribution-graph-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/output/pacman-contribution-graph.svg"
+  />
+  <img
+    alt="Pac-Man contribution graph"
+    src="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/output/pacman-contribution-graph.svg"
+  />
+</picture>
+
 </div>
 
 ---
