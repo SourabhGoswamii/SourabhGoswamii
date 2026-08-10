@@ -253,15 +253,6 @@ research:
 </div>
 
 <br>
-
-<div align="center">
-
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=SourabhGoswamii&show_icons=true&hide_border=true&bg_color=0a0a0a&title_color=58a6ff&text_color=888888&icon_color=58a6ff" />
-
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SourabhGoswamii&layout=compact&hide_border=true&bg_color=0a0a0a&title_color=58a6ff&text_color=888888" />
-
-</div>
-
 ---
 
 ## CONTRIBUTION GRAPH
