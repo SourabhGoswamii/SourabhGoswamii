@@ -23,107 +23,15 @@ alias:      "SourabhGoswamii"
 title:      "Full-Stack, AI & Systems Developer"
 location:   "India (UTC+5:30)"
 education:  "B.Tech · Shivalik College of Engineering"
-available:  true
+available:  True
 
 focus:
   - "Full-stack web applications & scalable architectures"
   - "Artificial intelligence & agentic systems"
   - "Developer platforms & intelligent tools"
-  - "AI-powered healthcare systems"
+  - "AI-powered systems"
   - "Data structures, algorithms & system exploration"
-
-currently_building:
-  - "DIANA — Agentic CLI system with autonomous tools & execution modes"
-  - "BuilderX — AI-powered development and building platform"
-  - "MedCare — Intelligent healthcare management ecosystem"
-  - "Obsession — AI-powered personal growth operating system"
-  - "PlotFolio — Personal developer portfolio & project showcase"
 ```
-
----
-
-## CONTEXTS & ARCHITECTURE
-
-> Full-stack developer exploring the intersection of software engineering, artificial intelligence, systems, and intelligent products.
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**`[01]` FULL-STACK SYSTEMS**
-
-Modern web platforms, APIs, authentication, and scalable application architectures.
-
-```
-Languages → TypeScript · JavaScript
-Frontend  → React · Next.js · Tailwind CSS
-Backend   → Node.js · Express · Next.js
-APIs      → REST APIs · Authentication · AI APIs
-Database  → MongoDB
-```
-
-*Building complete products from interface to infrastructure*
-
-</td>
-<td width="50%" valign="top">
-
-**`[02]` AI & AGENTIC SYSTEMS**
-
-Intelligent applications, AI integrations, autonomous tools, and experimental systems.
-
-```
-Languages → Python · TypeScript
-AI        → LLMs · AI Agents · Deep Learning
-Systems   → Tool Calling · Agentic Workflows
-Models    → Gemini · Hugging Face · TensorFlow
-Research  → RL · Healthcare AI · Intelligent Agents
-```
-
-*DIANA · Healthcare AI · AI-integrated applications*
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**`[03]` WEB3 & DECENTRALIZED APPS**
-
-Exploring decentralized architectures and blockchain-backed applications.
-
-```
-Language  → Solidity
-Network   → Ethereum
-Libraries → Ethers.js · Web3.js
-Storage   → IPFS
-Concepts  → Smart Contracts · Web3
-Projects  → Healthcare data systems
-```
-
-*Exploring decentralized ownership and secure digital systems*
-
-</td>
-<td width="50%" valign="top">
-
-**`[04]` SYSTEMS & EXPLORATION**
-
-Algorithms, lower-level programming, automation, and software engineering fundamentals.
-
-```
-Languages → C · C++ · Python · Rust
-Core      → DSA · Algorithms · Problem Solving
-Systems   → Linux · CLI · Automation
-Tools     → Git · GitHub · Docker
-Exploring → RL Environments · AI Infrastructure
-```
-
-*Learning systems by building, breaking, and rebuilding them*
-
-</td>
-</tr>
-</table>
-
----
-
 ## TECH STACK
 
 **Languages**
@@ -133,8 +41,6 @@ Exploring → RL Environments · AI Infrastructure
 ![JavaScript](https://img.shields.io/badge/-JavaScript-0a0a0a?style=flat-square\&logo=javascript\&logoColor=F7DF1E)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-0a0a0a?style=flat-square\&logo=typescript\&logoColor=3178C6)
 ![Python](https://img.shields.io/badge/-Python-0a0a0a?style=flat-square\&logo=python\&logoColor=3776AB)
-![Rust](https://img.shields.io/badge/-Rust-0a0a0a?style=flat-square\&logo=rust\&logoColor=white)
-![Solidity](https://img.shields.io/badge/-Solidity-0a0a0a?style=flat-square\&logo=solidity\&logoColor=white)
 
 **Frontend**
 
@@ -146,21 +52,18 @@ Exploring → RL Environments · AI Infrastructure
 
 **Backend & Databases**
 
-![Node.js](https://img.shields.io/badge/-Node.js-0a0a0a?style=flat-square\&logo=node.js\&logoColor=339933)
-![Express](https://img.shields.io/badge/-Express-0a0a0a?style=flat-square\&logo=express\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-0a0a0a?style=flat-square\&logo=mongodb\&logoColor=47A248)
+![Node.js](https://img.shields.io/badge/-Node.js-0a0a0a?style=flat-square&logo=node.js&logoColor=339933)
+![Express](https://img.shields.io/badge/-Express-0a0a0a?style=flat-square&logo=express&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-0a0a0a?style=flat-square&logo=fastapi&logoColor=009688)
+![MongoDB](https://img.shields.io/badge/-MongoDB-0a0a0a?style=flat-square&logo=mongodb&logoColor=47A248)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-0a0a0a?style=flat-square&logo=postgresql&logoColor=4169E1)
+![MySQL](https://img.shields.io/badge/-MySQL-0a0a0a?style=flat-square&logo=mysql&logoColor=4479A1)
 
 **AI & Machine Learning**
 
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-0a0a0a?style=flat-square\&logo=tensorflow\&logoColor=FF6F00)
 ![Hugging Face](https://img.shields.io/badge/-Hugging_Face-0a0a0a?style=flat-square\&logo=huggingface\&logoColor=FFD21E)
 ![Gemini](https://img.shields.io/badge/-Gemini-0a0a0a?style=flat-square\&logo=googlegemini\&logoColor=8E75B2)
-
-**Web3**
-
-![Ethereum](https://img.shields.io/badge/-Ethereum-0a0a0a?style=flat-square\&logo=ethereum\&logoColor=white)
-![Solidity](https://img.shields.io/badge/-Smart_Contracts-0a0a0a?style=flat-square\&logo=solidity\&logoColor=white)
-![IPFS](https://img.shields.io/badge/-IPFS-0a0a0a?style=flat-square\&logo=ipfs\&logoColor=65C2CB)
 
 **Cloud & Developer Tools**
 
@@ -170,77 +73,6 @@ Exploring → RL Environments · AI Infrastructure
 ![Vercel](https://img.shields.io/badge/-Vercel-0a0a0a?style=flat-square\&logo=vercel\&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-0a0a0a?style=flat-square\&logo=linux\&logoColor=FCC624)
 ![AWS](https://img.shields.io/badge/-AWS-0a0a0a?style=flat-square\&logo=amazonwebservices\&logoColor=FF9900)
-
----
-
-
-
-## SHIPPED & ACTIVE PROJECTS
-
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│                                                                        │
-│  DIANA         Agentic CLI and intelligent execution system            │
-│                Tool-driven architecture with autonomous agent modes    │
-│                TypeScript-based experimentation with AI workflows      │
-│                                                                        │
-│  MEDCARE       Intelligent healthcare management ecosystem             │
-│                AI-assisted healthcare and patient data workflows       │
-│                Exploring secure and scalable medical infrastructure    │
-│                                                                        │
-│  CODEHUB       Developer collaboration and learning platform           │
-│                Coding challenges · Rankings · Community · AI assistant │
-│                Learning modules · Collaboration · Developer profiles   │
-│                                                                        │
-│  BUILDERX      AI-powered development platform                         │
-│                Exploring intelligent software generation workflows     │
-│                Focused on accelerating modern application development  │
-│                                                                        │
-│  PLOTFOLIO     Personal developer portfolio                            │
-│                Interactive showcase for projects, skills and journey   │
-│                Built around modern web technologies                    │
-│                                                                        │
-│  AI HEALTH     Deep-learning healthcare research                       │
-│                Brain MRI processing and neurological classification   │
-│                Python · TensorFlow · Medical imaging pipelines         │
-│                                                                        │
-│  E-COMMERCE    Full-stack MERN commerce application                    │
-│                React frontend with Node.js and MongoDB backend         │
-│                Product management and full-stack CRUD architecture     │
-│                                                                        │
-└────────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## CURRENT EXPLORATIONS
-
-```yaml
-research:
-  ai_agents:
-    - "Autonomous tool execution"
-    - "Agent memory & context"
-    - "Local-first intelligent systems"
-    - "AI-powered developer tooling"
-
-  machine_learning:
-    - "Deep learning"
-    - "Healthcare AI"
-    - "Medical image processing"
-    - "Reinforcement learning environments"
-
-  engineering:
-    - "Scalable full-stack architectures"
-    - "Developer platforms"
-    - "CLI applications"
-    - "Open-source systems"
-
-  computer_science:
-    - "Data structures & algorithms"
-    - "System design"
-    - "Low-level programming"
-    - "Problem solving"
-```
 
 ---
 
@@ -254,32 +86,6 @@ research:
 
 <br>
 ---
-
-## CONTRIBUTION GRAPH
-
-<div align="center">
-
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SourabhGoswamii&bg_color=0a0a0a&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true" width="95%" alt="Contribution graph" />
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/output/pacman-contribution-graph-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/output/pacman-contribution-graph.svg"
-  />
-  <img
-    alt="Pac-Man contribution graph"
-    src="https://raw.githubusercontent.com/SourabhGoswamii/SourabhGoswamii/output/pacman-contribution-graph.svg"
-  />
-</picture>
-
-</div>
-
----
-
 ## ENGINEERING PHILOSOPHY
 
 ```
@@ -313,7 +119,7 @@ Current direction:
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
 │  Available for:  Open Source · Collaboration · Hackathons    │
-│  Domains:        Full-Stack · AI · Web3 · Developer Tools    │
+│  Domains:        Full-Stack · AI  · Developer Tools    │
 │  Timezone:       UTC+5:30 (India)                            │
 │                                                              │
 │  →  github.com/SourabhGoswamii                               │
