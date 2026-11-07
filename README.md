@@ -20,7 +20,7 @@
 
 name:       "Sourabh Goswami"
 alias:      "SourabhGoswamii"
-title:      "Full-Stack, AI & Systems Developer"
+title:      "Developer"
 location:   "India (UTC+5:30)"
 education:  "B.Tech · Shivalik College of Engineering"
 available:  True
@@ -28,7 +28,7 @@ available:  True
 focus:
   - "Full-stack web applications & scalable architectures"
   - "Artificial intelligence & agentic systems"
-  - "Developer platforms & intelligent tools"
+  - "Developer Models & intelligent tools"
   - "AI-powered systems"
   - "Data structures, algorithms & system exploration"
 ```
@@ -76,14 +76,6 @@ focus:
 
 ---
 
-## GITHUB STATS
-
-<div align="center">
-
-  <img src="https://streak-stats.demolab.com?user=SourabhGoswamii&theme=tokyonight&hide_border=true&background=0a0a0a&stroke=333333&ring=58a6ff&fire=58a6ff&currStreakNum=58a6ff&sideNums=58a6ff&currStreakLabel=888888&sideLabels=888888&dates=555555" width="440" alt="GitHub streak" />
-
-</div>
-
 <br>
 ---
 ## ENGINEERING PHILOSOPHY
@@ -119,14 +111,14 @@ Current direction:
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
 │  Available for:  Open Source · Collaboration · Hackathons    │
-│  Domains:        Full-Stack · AI  · Developer Tools    │
+│  Domains:        Full-Stack · AI ·Models· Developer Tools    │
 │  Timezone:       UTC+5:30 (India)                            │
 │                                                              │
 │  →  github.com/SourabhGoswamii                               │
 │  →  linkedin.com/in/sourabh-goswamii                         │
 │  →  x.com/SourabhGoswammi                                    │
 │  →  instagram.com/iam.sourabhm                               │
-│  →  sourabhgoswamii.vercel.app                              │
+│  →  sourabhgoswamii.vercel.app                               │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -134,8 +126,8 @@ Current direction:
 <p align="center">
   <a href="https://github.com/SourabhGoswamii"><img src="https://img.shields.io/badge/GITHUB-0a0a0a?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/sourabh-goswamii"><img src="https://img.shields.io/badge/LINKEDIN-0a0a0a?style=for-the-badge&logo=linkedin&logoColor=0A66C2" /></a>
-  <a href="https://x.com/SourabhGoswammi"><img src="https://img.shields.io/badge/TWITTER-0a0a0a?style=for-the-badge&logo=x&logoColor=white" /></a>
   <a href="https://www.instagram.com/iam.sourabhm/"><img src="https://img.shields.io/badge/INSTAGRAM-0a0a0a?style=for-the-badge&logo=instagram&logoColor=E4405F" /></a>
+  <a href="https://x.com/SourabhGoswammi"><img src="https://img.shields.io/badge/TWITTER-0a0a0a?style=for-the-badge&logo=x&logoColor=white" /></a>
   <a href="https://sourabhgoswamii.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-0a0a0a?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 </p>
 
