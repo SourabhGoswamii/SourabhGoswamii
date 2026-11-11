@@ -68,7 +68,7 @@
     <text class="mono" x="72" y="146" font-size="11" letter-spacing="2.2" fill="#58a6ff">→</text>
     <g class="mono" font-size="11" font-weight="500" letter-spacing="2" fill="#f0f6fc">
       <text class="role" x="96" y="146" style="animation-delay:1.2s">Backend · Cloud · DevOps Systems<tspan class="cursor" fill="#58a6ff"> ▍</tspan></text>
-      <text class="role" x="96" y="146" style="animation-delay:4.2s">Flutter · Dart · Mobile Apps<tspan class="cursor" fill="#58a6ff"> ▍</tspan></text>
+      <text class="role" x="96" y="146" style="animation-delay:4.2s">Python · Tensorflow · MLOPS Systems<tspan class="cursor" fill="#58a6ff"> ▍</tspan></text>
       <text class="role" x="96" y="146" style="animation-delay:7.2s">WebSockets · Next.js · Real-Time<tspan class="cursor" fill="#58a6ff"> ▍</tspan></text>
     </g>
   </g>
